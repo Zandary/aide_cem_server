@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const articleSchema = new mongoose.Schema({
+const sunupaySchema = new mongoose.Schema({
   titre: String,
   numero: String,
   contenu: [
@@ -13,8 +13,8 @@ const articleSchema = new mongoose.Schema({
       texte: [String],
     },
   ],
-}, { collection: 'articlesNyVolako' });
+}, { collection: 'articlesSunupay' });
 
-const Article = mongoose.model('Article', articleSchema);
+const Sunupay = mongoose.model('Sunupay', sunupaySchema);
 
-module.exports = Article;
+module.exports = Sunupay;
