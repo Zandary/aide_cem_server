@@ -17,7 +17,7 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
       console.log('Connected to the database');
       
       const app = express();
-      const port = 33455;
+      const port = 34567;
   
       app.use(cors()); // Enable CORS for all routes
   
